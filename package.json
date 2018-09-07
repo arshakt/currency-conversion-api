@@ -4,7 +4,7 @@
   "description": "currency converter",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "FIXER_API_KEY=b245db79c6ee49e91695126aa7b39562 node src/index.js"
   },
   "author": "Arshak Tunyan",
   "license": "ISC",
@@ -12,6 +12,8 @@
     "body-parser": "1.18.3",
     "express": "4.16.3",
     "joi": "13.6.0",
-    "morgan": "1.9.0"
+    "morgan": "1.9.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.2"
   }
 }

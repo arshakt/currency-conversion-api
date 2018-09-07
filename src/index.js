@@ -1,11 +1,11 @@
 const app = require('./app')
-
-const server = app.listen(3000)
+const { PORT } = require('./config')
+const server = app.listen(PORT)
 
 server.on('error', (err) => {
   console.log(err.message)
 })
 server.on('listening', () => {
-  console.log('listening')
+  console.log(`listening on port ${PORT}`)
 })
 
