@@ -1,0 +1,17 @@
+{
+  "name": "currency-conversion-api",
+  "version": "1.0.0",
+  "description": "currency converter",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Arshak Tunyan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.3",
+    "joi": "13.6.0",
+    "morgan": "1.9.0"
+  }
+}
