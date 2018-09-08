@@ -2,6 +2,12 @@ const Joi = require('joi')
 const {InputValidationError} = require('../../utils/errors')
 const {VALIDATIONS} = require('../../config')
 
+/**
+ * @param {Object} req
+ * @param {Object} res
+ * @param {Function} next
+ * @description Validate get conversion parameters.
+ */
 function validateGetConversion(req, res, next) {
   const schema = {
     query: {
@@ -16,6 +22,12 @@ function validateGetConversion(req, res, next) {
   return next()
 }
 
+/**
+ * @param {Object} req
+ * @param {Object} res
+ * @param {Function} next
+ * @description Validate get conversion rates parameters.
+ */
 function validateGetConversionRates(req, res, next) {
   const schema = {
     query: {

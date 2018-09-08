@@ -13,6 +13,13 @@ const ERRORS = {
   }
 }
 
+/**
+ * @param {Object} err
+ * @param {Object} req
+ * @param {Object} res
+ * @param {Function} next
+ * @description Handle errors.
+ */
 function handleError(err, req, res, next) {
   const errorResponse = ERRORS[err.name] || ERRORS.Default
 
