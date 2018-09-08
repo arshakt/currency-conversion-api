@@ -6,6 +6,7 @@
 
 
 ### GET ./conversion
+<a name="get-conversion"></a>
 
 | Field name   | In        | Required |
 |--------------|-----------|----------|
@@ -13,7 +14,9 @@
 | currencyTo   | query     | yes      |
 | value        | query     | yes      |
 
+
 ### GET ./conversion/rates
+<a name="get-conversion-rates"></a>
 
 | Field name   | In        | Required |
 |--------------|-----------|----------|
