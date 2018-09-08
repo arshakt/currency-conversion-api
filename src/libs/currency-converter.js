@@ -3,6 +3,14 @@ const Promise = require('bluebird')
 
 const {CONVERTER_API_DOMAIN, DEFAULT_CURRENCY_CODES} = require('../config')
 
+/**
+ * @param {Object} payload
+ * @param {string} payload.currencyFrom
+ * @param {string} payload.currencyTo
+ * @param {number} payload.value
+ * @returns {Promise<Object>}
+ * @description Convert currency.
+ */
 function convert(payload) {
   const {currencyFrom, currencyTo, value} = payload
 
@@ -19,6 +27,11 @@ function convert(payload) {
     })
 }
 
+/**
+ * @param {string} currencyFrom
+ * @returns {Promise<Object>}
+ * @description Get conversion rates from remote API.
+ */
 function getRates(currencyFrom) {
 
   const promiseArray = DEFAULT_CURRENCY_CODES.map((code) => {

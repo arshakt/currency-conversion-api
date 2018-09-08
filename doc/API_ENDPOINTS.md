@@ -1,8 +1,8 @@
 ## API Documentation
 
 ### Table of Contents
-[GET ./conversion](#get-conversion)
-[GET ./conversion](#get-conversion-rates)
+- [GET ./conversion](#get-conversion)
+- [GET ./conversion/rates](#get-conversion-rates)
 
 
 ### GET ./conversion
