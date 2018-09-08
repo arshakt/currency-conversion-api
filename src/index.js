@@ -1,5 +1,5 @@
 const app = require('./app')
-const { PORT } = require('./config')
+const {PORT} = require('./config')
 const server = app.listen(PORT)
 
 server.on('error', (err) => {

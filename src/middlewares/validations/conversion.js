@@ -16,7 +16,20 @@ function validateGetConversion(req, res, next) {
   return next()
 }
 
+function validateGetConversionRates(req, res, next) {
+  const schema = {
+    query: {
+      currencyFrom: Joi.string().valid(VALIDATIONS.CURRENCY_CODES).required()
+    }
+  }
+  const {error} = Joi.validate({query: req.query}, schema)
+
+  if (error) return next(new InputValidationError(error.details[0].message))
+  return next()
+}
+
 
 module.exports = {
-  validateGetConversion
+  validateGetConversion,
+  validateGetConversionRates
 }

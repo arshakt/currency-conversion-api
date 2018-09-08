@@ -2,6 +2,7 @@
 
 ### Table of Contents
 [GET ./conversion](#get-conversion)
+[GET ./conversion](#get-conversion-rates)
 
 
 ### GET ./conversion
@@ -11,3 +12,10 @@
 | currencyFrom | query     | yes      |
 | currencyTo   | query     | yes      |
 | value        | query     | yes      |
+
+### GET ./conversion/rates
+
+| Field name   | In        | Required |
+|--------------|-----------|----------|
+| currencyFrom | query     | yes      |
+

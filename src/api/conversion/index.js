@@ -9,4 +9,9 @@ router.get('/',
   conversionService.getConversion
 )
 
+router.get('/rates',
+  conversionValidationMiddleware.validateGetConversionRates,
+  conversionService.getConversionRates
+)
+
 module.exports = router

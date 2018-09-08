@@ -3,6 +3,10 @@ module.exports = {
   FIXER_API_KEY: process.env.FIXER_API_KEY,
   FIXER_API_DOMAIN: 'http://data.fixer.io/api',
   CONVERTER_API_DOMAIN: 'http://free.currencyconverterapi.com/api/v5',
+  DEFAULT_CURRENCY_CODES: [
+    'USD', 'CAD', 'EUR', 'RUB', 'GEL',
+    'INR', 'CNY', 'AED', 'IRR', 'GBP'
+  ],
   VALIDATIONS: {
     CURRENCY_CODES: [
       'USD', 'CAD', 'EUR', 'AED', 'AFN', 'ALL', 'AMD', 'ARS', 'AUD', 'AZN', 'BAM',
