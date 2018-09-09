@@ -1,11 +1,12 @@
 module.exports = {
-  PORT: process.env.PORT || 3000,
+  PORT: process.env.PORT || 3003,
   FIXER_API_KEY: process.env.FIXER_API_KEY,
   FIXER_API_DOMAIN: 'http://data.fixer.io/api',
   CONVERTER_API_DOMAIN: 'http://free.currencyconverterapi.com/api/v5',
   DEFAULT_CURRENCY_CODES: [
     'USD', 'CAD', 'EUR', 'RUB', 'GEL',
-    'INR', 'CNY', 'AED', 'IRR', 'GBP'
+    'INR', 'CNY', 'AED', 'IRR', 'GBP',
+    'AMD'
   ],
   VALIDATIONS: {
     CURRENCY_CODES: [

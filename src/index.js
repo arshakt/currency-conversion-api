@@ -6,6 +6,6 @@ server.on('error', (err) => {
   console.log(err.message)
 })
 server.on('listening', () => {
-  console.log(`listening on port ${PORT}`)
+  console.log(`\n App is started - listening on port ${PORT}`)
 })
 
